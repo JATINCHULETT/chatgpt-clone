@@ -20,7 +20,10 @@ connectDB();
 const app = express();
 
 //middlewares
-app.use(cors());
+app.use(cors({
+   origin: "https://chatgpt-clone-sooty-eight.vercel.app/",
+  credentials: true
+}));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
