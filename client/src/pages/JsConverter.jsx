@@ -29,7 +29,7 @@ const JsConverter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8080/api/v1/openai/js-converter", {
+      const { data } = await axios.post("https://chatgpt-clone-s2ok.onrender.com", {
         text,
       });
       console.log(data);
