@@ -21,7 +21,7 @@ const app = express();
 
 //middlewares
 app.use(cors({
-   origin: "https://chatgpt-clone-sooty-eight.vercel.app/",
+   origin: "https://chatgpt-clone-sooty-eight.vercel.app",
   credentials: true
 }));
 app.use(express.json());
